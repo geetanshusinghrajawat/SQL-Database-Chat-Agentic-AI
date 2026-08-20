@@ -36,7 +36,7 @@ if not groq_api:
     st.info('Provide your groq API Key to Continue')
     st.stop()
 
-model=ChatGroq(model='llama-3.3-70b-versatile',groq_api_key=groq_api,streaming=True)
+model=ChatGroq(model='openai/gpt-oss-20b',groq_api_key=groq_api,streaming=True)
 
 @st.cache_resource(ttl=7200)
 
